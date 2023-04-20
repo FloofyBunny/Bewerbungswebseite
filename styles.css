@@ -1,0 +1,61 @@
+.gradient li:hover {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0% , rgba(200,200,200,1) 100%);
+}
+
+.nav-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.customdropdown {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    color: #005894;
+    font-weight: bold;
+}
+.customdropdown div ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.customdropdown div ul li {
+    margin: auto;
+}
+
+#nav-btn a{
+    background-color: #28BDD6;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 1px solid #24aac1;
+}
+
+#nav-btn a:hover {
+    background-color: #2097ab;
+    border-color: #1a7c8d;
+}
+
+#nav-btn:hover {
+    background: #ffffff;
+}
+
+.customdropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 62px;
+}
+
+.dropdown-trigger:hover div {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.banner-gradient {
+    background: linear-gradient(90deg, #005E9E 0%, #513777 50%, #A90E4E 100%);
+    padding-bottom: 20px;
+}

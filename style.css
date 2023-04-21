@@ -63,6 +63,22 @@
     padding-bottom: 20px;
 }
 
+.banner-gradient p {
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    margin: auto;
+    text-align: center;
+    margin: 0 40px;
+}
+
+@media only screen and (max-width: 992px){
+    .banner-gradient p {
+        font-size: x-large;
+    }
+}
+
+
 #large-nav {
     display: none;
 }

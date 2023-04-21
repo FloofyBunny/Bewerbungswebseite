@@ -61,6 +61,7 @@
 .banner-gradient {
     background: linear-gradient(90deg, #005E9E 0%, #513777 50%, #A90E4E 100%);
     padding-bottom: 20px;
+    margin-top: 60px;
 }
 
 .banner-gradient p {
@@ -111,6 +112,10 @@
     margin-bottom: 8px;
 }
 
+.navbar-nav {
+    background-color: white;
+}
+
 .navbar-toggler {
     margin-bottom: 8px;
     margin-right: 12px;
@@ -127,4 +132,9 @@
     #large-nav {
         display: block
     }
+}
+
+#techstack {
+    background-color: #003254;
+    padding: 48px;
 }

@@ -1,3 +1,6 @@
+
+
+
 .gradient li:hover {
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0% , rgba(200,200,200,1) 100%);
@@ -58,4 +61,53 @@
 .banner-gradient {
     background: linear-gradient(90deg, #005E9E 0%, #513777 50%, #A90E4E 100%);
     padding-bottom: 20px;
+}
+
+#large-nav {
+    display: none;
+}
+
+#small-nav {
+    display: none;
+}
+
+#small-nav li {
+    padding-left: 12px;
+    background-color: #0A98CE;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#small-nav li:hover {
+    background-color: #0080C5;
+}
+
+#small-nav li a {
+    color: white;
+    font-weight: bold;
+}
+
+#small-nav .container-fluid {
+    padding: 0;
+}
+
+#small-nav .navbar-brand {
+    margin-left: 12px;
+    margin-bottom: 8px;
+}
+
+.navbar-toggler {
+    margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 992px){
+    #small-nav {
+        display: block;
+    }
+}
+    
+
+@media only screen and (min-width: 992px){
+    #large-nav {
+        display: block
+    }
 }

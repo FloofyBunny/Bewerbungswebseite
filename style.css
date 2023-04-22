@@ -148,6 +148,31 @@
     }
 }
 
+.carousel-caption {
+    width:20vw;
+    max-width: 50%;
+    height:  70%;
+    margin-left: 0;
+    padding: 20px;
+    background-color: rgba(255,255,255,.75);
+}
+
+.carousel-text {
+    color:#003254;
+    text-align: start;
+    top: 15%;
+}
+
+.carousel-text h3 {
+    font-weight: bold;
+    font-size: 40px;
+}
+.carousel-text p {
+    font-size: x-large;
+}
+
+
+
 /* animation techstack */
 
 

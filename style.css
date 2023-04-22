@@ -141,6 +141,13 @@
  
 }
 
+@media only screen and (max-width: 576px){
+    #techstack img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 /* animation techstack */
 
 

@@ -81,6 +81,13 @@
     }
 }
 
+@media only screen and (max-width: 770px){
+    .banner-gradient p {
+        margin: 2px;
+        font-size: large;
+    }
+}
+
 
 #large-nav {
     display: none;
@@ -145,6 +152,13 @@
     #techstack img {
         width: 100px;
         height: 100px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #techstack img {
+        width: 70px;
+        height: 70px;
     }
 }
 

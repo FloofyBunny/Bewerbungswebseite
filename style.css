@@ -64,6 +64,12 @@
     margin-top: 60px;
 }
 
+@media only screen and (max-width: 992px) {
+    .banner-gradient {
+
+    }
+}
+
 .banner-gradient p {
     color: white;
     font-weight: bold;
@@ -71,6 +77,10 @@
     margin: auto;
     text-align: center;
     margin: 20px 40px;
+}
+
+#small-nav {
+    background-color: white;
 }
 
 @media only screen and (max-width: 992px){
@@ -110,7 +120,6 @@
 
 #small-nav .navbar-brand {
     margin-left: 12px;
-    margin-bottom: 8px;
 }
 
 .navbar-nav {
@@ -118,7 +127,6 @@
 }
 
 .navbar-toggler {
-    margin-bottom: 8px;
     margin-right: 12px;
 }
 

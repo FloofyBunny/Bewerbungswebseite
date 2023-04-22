@@ -149,13 +149,13 @@
 }
 
 .carousel-caption {
-    width:20vw;
-    max-width: 50%;
+    width: 35%;
     height:  70%;
     margin-left: 0;
     padding: 20px;
     background-color: rgba(255,255,255,.75);
 }
+
 
 .carousel-text {
     color:#003254;
@@ -165,12 +165,46 @@
 
 .carousel-text h3 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
 }
 .carousel-text p {
     font-size: x-large;
 }
 
+#small-captions {
+    background: rgb(40,189,214);
+    background: linear-gradient(90deg, rgba(40,189,214,1) 0%, rgba(0,50,84,1) 100%);;
+}
+
+.small-caption {
+    color: white;
+    padding: 20px 0;
+}
+
+
+@media only screen and (max-width: 1500px){
+    .carousel-text h3 {
+        font-size: 25px;
+    }
+    .carousel-text p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1360px){
+    .carousel-text h3 {
+        font-size: 20px;
+    }
+    .carousel-text p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+
+
+
+}
 
 
 /* animation techstack */

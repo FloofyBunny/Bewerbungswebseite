@@ -322,5 +322,43 @@
 }
 
 #projects {
-    height: 400px;
+    height: 600px;
+    margin-bottom: 200px;
+}
+
+#bilder-bewerter {
+    margin: 100px;
+}
+
+.lead {
+    width: 75%;   
+}
+
+.text {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width:1300px){
+    #h2-img-app {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .lead {
+        margin: auto;
+        
+    }
+
+    .resize {
+        margin: 0;
+    }
+
+    #projects h1 {
+        margin-bottom: 10px !important;
+    }
+
+    #bilder-bewerter {
+        margin: 20px;
+    }
+
 }

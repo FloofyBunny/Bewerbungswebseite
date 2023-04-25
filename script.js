@@ -1,6 +1,26 @@
 "use strict"
 
+if(window.innerWidth < 1300){
+    resize();
+}
 
+window.addEventListener("resize", resize);
+
+function resize(){
+    if(window.innerWidth < 1300){
+        let cols = document.querySelectorAll(".resize");
+        cols.forEach((e) => {
+            e.classList.remove("col-sm");
+        });
+    }
+    if(window.innerWidth >= 1300){
+        let cols = document.querySelectorAll(".resize");
+        cols.forEach((e) => {
+            e.classList.add("col-sm");
+        });
+    }
+
+}
 
 function carouselCaption() {
 

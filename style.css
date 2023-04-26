@@ -362,3 +362,40 @@
     }
 
 }
+
+#btn-bewertungs-app {
+    height: 50px;
+    text-align: center;
+    padding: 12px 25%;
+    margin-top: 100px;
+}
+
+.github-mark {
+    height: 48px;
+    margin-top: 100px;
+}
+@media only screen and (min-width: 365px) {
+    .github-mark {
+        margin-left: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    
+    #buttons {
+        display: block !important;
+    }
+    
+}
+
+@media only screen and (max-width: 1300px) {
+    
+    .github-mark {
+        margin-top: 40px;
+    }
+    #btn-bewertungs-app {
+        margin-top: 40px;
+    }
+    
+}
+

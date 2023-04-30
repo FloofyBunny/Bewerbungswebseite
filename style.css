@@ -326,10 +326,6 @@
     margin-bottom: 200px;
 }
 
-#bilder-bewerter {
-    margin: 100px;
-}
-
 .lead {
     width: 75%;   
 }
@@ -399,3 +395,7 @@
     
 }
 
+#div-partikel {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

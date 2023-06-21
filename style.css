@@ -358,7 +358,7 @@
     }
 
     /* Partikel Simulation*/
-    .h2-partikel-sim {
+    #h2-partikel-sim {
         margin-top: 20px;
         text-align: center;
     }
@@ -383,7 +383,7 @@
     }
 }
 
-#btn-bewertungs-app {
+.btn-projects {
     height: 50px;
     text-align: center;
     padding: 12px 25%;
@@ -402,7 +402,7 @@
 
 @media only screen and (max-width: 365px) {
     
-    #buttons {
+    .buttons {
         display: block !important;
     }
     
@@ -413,11 +413,12 @@
     .github-mark {
         margin-top: 40px;
     }
-    #btn-bewertungs-app {
+    .btn-projects {
         margin-top: 40px;
     }
     
 }
+
 
 #div-partikel {
     padding-top: 100px;
@@ -425,6 +426,11 @@
 }
 #div-partikel-lg {
     padding-top: 48px;
+    padding-bottom: 48px;
+}
+#div-partikel-sm {
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .projects-uneven-align {

@@ -214,12 +214,6 @@
     }
 }
 
-@media only screen and (max-width: 1200px){
-
-
-
-}
-
 
 /* animation techstack */
 
@@ -374,13 +368,14 @@
 }
 
 @media only screen and (min-width: 1300px){
-    #div-partikel-lg {
+
+    .projects-lg-toggle {
         display: block !important;
     }
-
-    #div-partikel-sm {
+    .projects-sm-toggle {
         display: none !important;
     }
+
 }
 
 .btn-projects {
@@ -419,19 +414,6 @@
     
 }
 
-
-#div-partikel {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-#div-partikel-lg {
-    padding-top: 48px;
-    padding-bottom: 48px;
-}
-#div-partikel-sm {
-    padding-top: 48px;
-    padding-bottom: 48px;
-}
 
 .projects-uneven-align {
     margin-left:25%;

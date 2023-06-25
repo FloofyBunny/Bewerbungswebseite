@@ -356,6 +356,11 @@
     .projects-sm-toggle {
         display: block !important;
     }
+    
+    .h2-projects {
+        text-align: center;
+    
+    }
 
 }
 

@@ -1,3 +1,5 @@
+
+
 .gradient li:hover {
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0% , rgba(200,200,200,1) 100%);
@@ -329,10 +331,7 @@
 }
 
 @media only screen and (max-width:1300px){
-    #h2-img-app {
-        margin-top: 20px;
-        text-align: center;
-    }
+
 
     .lead {
         margin: auto;
@@ -351,18 +350,11 @@
         margin: 20px;
     }
 
-    /* Partikel Simulation*/
-    #h2-partikel-sim {
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    #div-partikel-sm {
-        display: block !important;
-    }
-
-    #div-partikel-lg {
+    .projects-lg-toggle {
         display: none !important;
+    }
+    .projects-sm-toggle {
+        display: block !important;
     }
 
 }
@@ -372,6 +364,7 @@
     .projects-lg-toggle {
         display: block !important;
     }
+
     .projects-sm-toggle {
         display: none !important;
     }

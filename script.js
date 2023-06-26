@@ -22,12 +22,14 @@ function resize(){
 
 }
 
+const itemCount = 2
+
 function carouselCaption() {
 
     if(window.innerWidth < 1200){
         let prev = document.querySelector("#carousel .show");
 
-        for(let i = 1; i<= 3; i++){
+        for(let i = 1; i<= itemCount; i++){
             let x = document.getElementById("car-" + i);
             if(x.classList.contains("active")) {
                 let y = document.querySelector(".small-caption:nth-child("+ i + ")");

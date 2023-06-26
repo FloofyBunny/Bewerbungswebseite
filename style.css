@@ -416,3 +416,13 @@
 .projects-uneven-align {
     margin-left:25%;
 }
+
+#lebenslauf {
+    background-color: #003254;
+    padding: 48px;
+ 
+}
+
+.btn-lebenslauf {
+    margin: auto;
+}

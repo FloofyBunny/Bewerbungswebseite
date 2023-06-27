@@ -317,10 +317,6 @@
     animation-play-state: running;
 }
 
-#projects {
-    height: 600px;
-    margin-bottom: 200px;
-}
 
 .lead {
     width: 75%;   
@@ -425,4 +421,8 @@
 
 .btn-lebenslauf {
     margin: auto;
+}
+
+#kontakt {
+    background-color: #003254;
 }

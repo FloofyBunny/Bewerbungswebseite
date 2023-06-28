@@ -382,10 +382,13 @@
 
 .github-mark {
     height: 48px;
+}
+
+.a-github-mark {
     margin-top: 100px;
 }
 @media only screen and (min-width: 365px) {
-    .github-mark {
+    .a-github-mark {
         margin-left: 10px !important;
     }
 }
@@ -400,7 +403,7 @@
 
 @media only screen and (max-width: 1300px) {
     
-    .github-mark {
+    .a-github-mark {
         margin-top: 40px;
     }
     .btn-projects {

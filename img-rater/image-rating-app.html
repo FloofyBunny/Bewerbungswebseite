@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder Bewerten</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        .navbar {
+            padding: 20px;
+            
+        }
+        
+        .shadow {
+            box-shadow: #111133 0px 0px 6px 0px;
+        }
+
+        .navbar-brand {
+            font-size: x-large;
+            color: #ec5700;
+        }
+
+        .btn {
+            background-color: #ff7e34;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        #zurück {
+            margin-right: 5px;
+        }
+
+        #weiter {
+            margin-left: 5px;
+        }
+
+        .form-control {
+            width: 75px;
+        }
+
+        img {
+            margin: 20px 0;
+            max-height: 500px;
+        }
+
+        @media only screen and (max-width: 500px){
+            .w-50 {
+                width: 75% !important;
+            }
+        }
+
+        #keks {
+            margin-top: 400px;
+        }
+
+        #danke {
+            margin-bottom: 400px;
+        }
+        
+        .box {
+            animation: bounce-in 2s linear 1;
+        }
+
+        .wobble {
+            animation-name: wobble;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-play-state: running;
+        }
+
+        @keyframes bounce-in {
+            0% {
+                -webkit-transform: translateY(-300px) scale(0.3);
+                transform: translateY(-300px) scale(0.3);
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+                opacity: 0;
+            }
+
+            32% {
+                -webkit-transform: translateY(0) scale(1);
+                transform: translateY(0) scale(1);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+                opacity: 1;
+            }
+
+            46% {
+                -webkit-transform: translateY(calc(-300px / 6));
+                transform: translateY(calc(-300px / 6));
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            61% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+
+            72% {
+                -webkit-transform: translateY(calc(-300px / 12));
+                transform: translateY(calc(-300px / 12));
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            81% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+
+            87% {
+                -webkit-transform: translateY(calc(-300px / 40));
+                transform: translateY(calc(-300px / 40));
+                -webkit-animation-timing-function: ease-in;
+                animation-timing-function: ease-in;
+            }
+
+            93% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+            }
+        }
+
+        @keyframes wobble {
+        0% {
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+        5% {
+            transform: scale(1.2);
+            transform: rotate(0deg);
+        }
+        10% {
+            transform: scale(1.2);
+            transform: rotate(15deg);
+        }
+        15% {
+            transform: scale(1.2);
+            transform: rotate(-15deg);
+        }
+        20% {
+            transform: scale(1.2);
+            transform: rotate(15deg);
+        }
+        25% {
+            transform: scale(1.2);
+            transform: rotate(-15deg);
+        }
+        30% {
+            transform: scale(1.2);
+            transform: rotate(15deg);
+        }
+        35% {
+            transform: scale(1.2);
+            transform: rotate(-15deg);
+        }
+        40% {
+            transform: scale(1.2);
+            transform: rotate(0deg);
+        }
+        45% {
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+        55% {
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+        60% {
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+        65% {
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+        70% {
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+        75% {
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+        80% {
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+        85% {
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+        90% {
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+        95% {
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+    }
+
+    #counter {
+        margin: 20px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light shadow">
+            <div class="container-fluid">
+              <h1 class="navbar-brand mb-0">Bilder Bewertungs App</span>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <img id="preview" class="img-fluid mx-auto d-block rounded" src="rate/(1).jpg">
+        <p id="counter" class="text-center">Bild 1 von 30</p>
+    </div>
+    <div class="container-fluid shadow bg-light">
+
+        <h1 class="h1 pt-5 text-center">Bewerte Bilder in den Kategorien von 1 bis 10 </h1>
+        <div id="anmerkung" class="container text-center text-muted">
+            <p class="mb-0">1 ist schlechter als 10</p>
+
+        </div>
+    
+        <div id="input" class="container d-flex flex-column align-items-center ">
+            <div class="kategorie d-flex justify-content-between w-50 pt-5 form-outline"">
+                <h2>Sympathie</h2>
+                <input class="form-control" id="sympathie" type="number" min="1" max="10" required></input>
+            </div>
+            <div class="kategorie d-flex justify-content-between w-50 pt-3 form-outline"">
+                <h2>Kompetenz</h2>
+                <input class="form-control" id="kompetenz" type="number" min="1" max="10" required></input>
+            </div>
+            <div class="kategorie d-flex justify-content-between pt-3 w-50 form-outline"">
+                <h2>Authorität</h2>
+                <input class="form-control" id="authorität" type="number" min="1" max="10" required></input>
+            </div>
+            <div id="buttons" class="d-flex justify-content-center w-50 pt-5 pb-5">
+                <input class="w-50 btn" id="zurück" type="button" value="zurück"></input> 
+                <input class="w-50 btn" id="weiter" type="button" value="weiter"></input>  
+            </div>
+        </div> 
+    </div>
+    <div id="div-keks" class="container d-none">
+        <img id="keks" alt="keks" class="img-fluid d-block mx-auto" src="assets/platzchen.png">
+        <h1 id="danke" class="text-center pt-3">Vielen Dank für deine Zeit!</h1>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>

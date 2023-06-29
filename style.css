@@ -309,6 +309,62 @@
 
 }
 
+@keyframes mouseover {
+    0% {
+        transform: scale(1);
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: scale(1.2);
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: scale(1.2);
+        transform: rotate(15deg);
+    }
+    30% {
+        transform: scale(1.2);
+        transform: rotate(-15deg);
+    }
+    40% {
+        transform: scale(1.2);
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: scale(1.2);
+        transform: rotate(-15deg);
+    }
+    60% {
+        transform: scale(1.2);
+        transform: rotate(15deg);
+    }
+    70% {
+        transform: scale(1.2);
+        transform: rotate(-15deg);
+    }
+    80% {
+        transform: scale(1.2);
+        transform: rotate(15deg);
+    }
+    90% {
+        transform: scale(1.2);
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: scale(1.2);
+        transform: rotate(0deg);
+    }
+
+}
+
+.mouseover {
+    animation-name: mouseover;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+}
+
 .animation {
     animation-name: wobble;
     animation-duration: 3s;

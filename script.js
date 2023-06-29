@@ -71,5 +71,14 @@ function currentAnimation() {
 
 }
 
+function wobble(i){
+    
+    const img = i.firstElementChild;
+    img.classList.remove(".animation");
+    img.classList.add("mouseover");
+    let copy = img.cloneNode(true);
+    img.parentNode.replaceChild(copy,img);
+}
+
 
 setInterval(currentAnimation, 3000);

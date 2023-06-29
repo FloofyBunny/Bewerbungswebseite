@@ -72,13 +72,21 @@ function currentAnimation() {
 
 }
 
+
 function wobble(i){
-    
-    const img = i.firstElementChild;
-    img.classList.remove("animation");
-    img.classList.add("mouseover");
-    let copy = img.cloneNode(true);
-    img.parentNode.replaceChild(copy,img);
+    if(i.value != "triggered"){
+        i.value = "triggered";
+        const img = i.firstElementChild;
+        img.classList.remove("animation");
+        img.classList.add("mouseover");
+        let copy = img.cloneNode(true);
+        img.parentNode.replaceChild(copy,img);
+        setTimeout(function () {
+            i.value = "";
+        }, 1500);
+    } else {
+        return;
+    }
 }
 
 

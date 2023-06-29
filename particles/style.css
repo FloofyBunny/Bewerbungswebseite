@@ -1,0 +1,21 @@
+.navbar {
+    background-color: midnightblue;
+    box-shadow: black 0px 0px 15px;
+}
+
+canvas {
+    box-shadow: black 0px 0px 15px;
+    border: none;;
+    display: block;
+    margin: auto;
+    background-color: black;
+}
+
+body {
+    background-color: rgb(20,20,25);
+    color: white;
+}
+
+.navbar-brand {
+    text-shadow: 2px 2px 5px black;
+}

@@ -65,7 +65,6 @@ function currentAnimation() {
     let item = document.querySelector("#techstack div:nth-child(" + id + ") img" );
     item.classList.add("animation");
     const copy = item.cloneNode(true);
-    console.log(item.parentNode)
     item.parentNode.replaceChild(copy,item);
 
     id = Math.floor(Math.random() * 7) + 1;

@@ -454,6 +454,14 @@
     .buttons {
         display: block !important;
     }
+
+    .a-github-mark {
+        display: block !important;
+    }
+
+    .btn-lebenslauf {
+        font-size: 1.0rem;
+    }
     
 }
 
@@ -461,6 +469,7 @@
     
     .a-github-mark {
         margin-top: 40px;
+
     }
     .btn-projects {
         margin-top: 40px;
